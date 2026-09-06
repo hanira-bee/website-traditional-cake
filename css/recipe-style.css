@@ -1,0 +1,456 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA&family=Playwrite+CO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* Reset */
+:root {
+  --primary: #ff4a03;
+  --dark: #010101;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #dfc9a8;
+  color: var(--white);
+  /* min-height: 5000px; */
+}
+/* Reset */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: rgb(70, 38, 0);
+  border-bottom: 1px solid #130c01;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--white);
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: var(--white);
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-feather a {
+  color: var(--white);
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-feather a:hover {
+  color: var(--primary);
+}
+
+.navbar .search-form {
+  position: absolute;
+  top: 140%;
+  right: 7%;
+  background-color: rgb(255, 253, 249);
+  width: 40rem;
+  height: 4rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--dark);
+  padding: 1rem;
+  border-radius: 3rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--dark);
+}
+
+#pastry-resep {
+  display: none;
+}
+/* Navbar */
+
+/* Beranda Resep */
+.beranda-resep {
+  background-color: rgb(238, 207, 173);
+  display: flex;
+  align-items: center;
+  padding: 10rem 7% 1.4rem;
+}
+
+.beranda-resep .content {
+  flex: 1 1 35rem;
+}
+
+.beranda-resep .content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #800000;
+}
+
+.beranda-resep .content p {
+  font-size: 2rem;
+  font-weight: 200;
+  font-family: "Poppins", verdana;
+  margin-right: 2rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  color: #130c01;
+}
+
+.beranda-resep .content h3 {
+  font-size: 2rem;
+  font-weight: 200;
+  font-family: "Playwrite AU SA", serif;
+  color: #800000;
+}
+
+.beranda-resep .image {
+  flex: 1 1 45rem;
+  margin-left: 8rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.beranda-resep .image img {
+  width: 80%;
+  height: 80%;
+  border-radius: 0.5rem;
+  margin-left: 7rem;
+}
+/* Beranda Resep */
+
+/* Deskripsi Singkat */
+.desk {
+  color: #302106;
+  background-color: #f5f0ea;
+  display: block;
+  align-items: center;
+  padding: 3rem;
+}
+
+.desk h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem;
+  position: relative;
+}
+
+.desk .row {
+  display: flex;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.desk .row .content {
+  flex: 1 1 35rem;
+  padding: 0 2rem;
+}
+
+.desk .row .content p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px #ffffff;
+}
+/* Deskripsi Singkat */
+
+/* Resep Kue */
+.recipe-cake {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.recipe-cake h2 {
+  writing-mode: vertical-rl;
+  color: darkolivegreen;
+  text-align: center;
+  font-size: 4rem;
+  margin: 3rem;
+  position: relative;
+}
+
+.recipe-cake .row {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-cake .row .menu-resep {
+  width: 23rem;
+  height: 33rem;
+  text-align: center;
+  background-color: rgb(178, 197, 125);
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px#130c01;
+  margin: 2rem;
+}
+
+.recipe-cake .row .menu-resep:hover {
+  box-shadow: 3px 3px 3px rgb(9, 43, 6);
+}
+
+.recipe-cake .row .menu-resep a img {
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  margin: 1.5rem 1rem;
+  border-radius: 4px;
+}
+
+.recipe-cake .row .menu-resep a h3 {
+  font-family: "Poppins", verdana;
+  font-size: 1.7rem;
+  text-align: left;
+  font-weight: 300;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  max-height: 30rem;
+  max-width: 30rem;
+  color: #302106;
+  margin-top: 0.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.recipe-cake .row .menu-resep p {
+  font-family: "Poppins", verdana;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 300;
+  padding-left: 2rem;
+  max-height: 30rem;
+  max-width: 30rem;
+  color: #130c01;
+  margin-top: 0.4rem;
+}
+/* Resep Kue Basah */
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: var(--white);
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--dark);
+}
+
+footer .links {
+  margin-bottom: 1.6rem;
+}
+
+footer .links a {
+  color: var(--white);
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit p {
+  color: var(--dark);
+  font-weight: 700;
+}
+/* Footer */
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62%;
+  }
+
+  #pastry-resep {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--white);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.4s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--dark);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .beranda-resep {
+    flex-wrap: wrap;
+  }
+
+  .beranda-resep .image {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 7px 1px;
+  }
+
+  .beranda-resep .image img {
+    margin: 3px 0;
+  }
+
+  .beranda-resep .content {
+    padding: 0;
+  }
+
+  .desk h3,
+  .beranda-resep .content h3 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .desk .row {
+    flex-wrap: wrap;
+  }
+
+  .recipe-cake .row {
+    left: 0;
+    font-size: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .recipe-cake .row .menu-resep a img {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .recipe-cake .row .menu-resep {
+    width: 16rem;
+    height: 30rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .recipe-cake {
+    padding: 1rem;
+  }
+
+  .recipe-cake h2 {
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+  }
+
+  .recipe-cake .row {
+    display: flex;
+    padding: 2px 0;
+    justify-content: left;
+  }
+}
+/* Media Query */

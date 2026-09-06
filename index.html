@@ -1,0 +1,279 @@
+<!--Main Web - Web Pastry-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Dapoer Lamak</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA&family=Playwrite+CO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Feather icon-->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!--icon web-->
+    <link rel="shortcut icon" href="img/misc/watercolor-pink.png" type="image/x-icon" />
+    <!--Style CSS-->
+    <link rel="stylesheet" href="css/style-pastry.css" />
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar">
+        <a href="#home" class="navbar-logo">Dapoer <span>Lamak</span>.</a>
+        <div class="navbar-nav">
+            <a href="#home">Beranda</a>
+            <a href="about.html">Tentang Kami</a>
+            <a href="#all-resep">Resep</a>
+            <a href="#contact">Kontak</a>
+        </div>
+
+        <div class="navbar-feather">
+            <a href="#" id="search-btn"><i data-feather="search"></i></a>
+            <!-- <a href="#" id="user"><i data-feather="user"></i></a>             -->
+            <a href="#" id="pastry-resep"><i data-feather="menu"></i></a>
+        </div>
+
+        <!-- Search -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- Search -->
+    </nav>
+
+    <!--TAMPILAN HOME-->
+    <section class="tampilan-home" id="home">
+        <main class="content">
+            <h1>Selamat Datang di Website <span>Dapoer Lamak</span>.</h1>
+            <p>Kami menyediakan berbagai resep <span>kue modern dan tradisional.</span></p>
+            <a href="recipe.html" class="cta">Lihat resep</a>
+        </main>
+    </section>
+
+    <!--ALL-resep-->
+    <section class="all-resep" id="all-resep">
+        <h2><span>Resep</span> Kami</h2>
+        <p class="desc">Temukan berbagai resep kue tradisional yang anda rindukan disini!</p>
+        <!-- untuk tombol arrow -->
+        <div class="wrapper">
+            <button class="btn-arrow btn-left" id="slideLeft">❮</button>
+            <button class="btn-arrow btn-right" id="slideRight">❯</button>
+
+            <div class="row" id="resepRow">
+                <div class="list-resep">
+                    <a href="recipes/serabi.html">
+                        <img src="img/recipes/serabi.jpg" alt="serabi" class="list-resep-image" /></a>
+                    <h3 class="list-resep-title">Serabi</h3>
+                    <p><strong>Manis & Gurih</strong></p>
+                    <p><strong>4</strong> langkah <strong>9</strong> bahan</p>
+                </div>
+                <div class="list-resep">
+                    <a href="recipes/klepon.html">
+                        <img src="img/recipes/klepon1.jpg" alt="klepon" class="list-resep-image"></a>
+                    <h3 class="list-resep-title">Klepon</h3>
+                    <p><strong>Manis & Kenyal</strong></p>
+                    <p><strong>7</strong> langkah <strong>6</strong> bahan</p>
+                </div>
+                <div class="list-resep">
+                    <a href="recipes/bikaambon.html">
+                        <img src="img/recipes/kue-bika-ambon.jpg" alt="bika-ambon" class="list-resep-image" /></a>
+                    <h3 class="list-resep-title">Bika Ambon</h3>
+                    <p><strong>Manis & Legit</strong></p>
+                    <p><strong>8</strong> langkah <strong>10</strong> bahaan</p>
+                </div>
+                <div class="list-resep">
+                    <a href="recipes/putuayu.html">
+                        <img src="img/recipes/putu-ayu.jpg" alt="putu-ayu" class="list-resep-image"></a>
+                    <h3 class="list-resep-title">Putu Ayu</h3>
+                    <p><strong>Legit & Gurih</strong></p>
+                    <p><strong>7</strong> langkah <strong>10</strong> bahan</p>
+                </div>
+                <div class="list-resep">
+                    <a href="recipes/kuekacang.html">
+                        <img src="img/recipes/kue-kacang.jpg" alt="kue-kacang" class="list-resep-image"></a>
+                    <h3 class="list-resep-title">Kue Kacang</h3>
+                    <p><strong>Manis & Legit</strong></p>
+                    <p class="langkah-bahan"><strong>6</strong> langkah <strong>8</strong> bahan</p>
+                </div>
+                <div class="list-resep">
+                    <a href="recipes/cornflakes.html">
+                        <img src="img/recipes/cornflakes.jpg" alt="cornflakes" class="list-resep-image"></a>
+                    <h3 class="list-resep-title">Conflakes</h3>
+                    <p><strong>Manis & Gurih</strong></p>
+                    <p><strong>4</strong> langkah <strong>10</strong> bahan</p>
+                </div>
+                <div class="list-resep">
+                    <a href="recipes/semprit.html">
+                        <img src="img/recipes/semprit keju.jpg" alt="semprit" class="list-resep-image"></a>
+                    <h3 class="list-resep-title">Semprit Keju</h3>
+                    <p><strong>Manis & Gurih</strong></p>
+                    <p><strong>4</strong> langkah <strong>10</strong> bahan</p>
+                </div>
+            </div>
+        </div>
+        <div class="see-more">
+            <a href="recipe.html">
+                <p><strong>Lihat lebih banyak</strong></p>
+            </a>
+        </div>
+    </section>
+
+    <!--RESEP CATEGORY-->
+    <section class="category" id="resep">
+        <h2><span>Kategori </span>Resep</h2>
+        <div class="row">
+
+            <a href="wet-cake.html">
+                <div class="category-card">
+                    <img src="img/recipes/kue-cucur.jpg" id="wet-cake" />
+                    <div class="category-desk">
+                        <h3>KUE BASAH</h3>
+                        <p>Temukan berbagai resep kue basah kesukaanmu disini!</p>
+                    </div>
+                </div>
+            </a>
+            <a href="dry-cake.html">
+                <div class="category-card">
+                    <img src="img/recipes/kue-kacang.jpg" id="dry-cake" />
+                    <div class="category-desk">
+                        <h3>KUE KERING</h3>
+                        <p>Mau membuat kue kering untuk lebaran? Kamu bisa menemukannya disini!</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!--REKOMENDASI TOKO-->
+    <section class="maps" id="maps">
+        <h2><span>Rekomendasi</span> Kami</h2>
+        <p class="maps-intro">Kami merekomendasikan beberapa toko kue jajanan modern dan tradisional yang dapat anda
+            jumpai.</p>
+        <div class="row">
+            <div class="card-maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114184.74600401215!2d106.77611843923886!3d-6.22344298955728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5afce9f8871%3A0xd7233a8fd47ff76f!2sPasar%20Kue%20Subuh%20Senen!5e0!3m2!1sid!2sid!4v1736179380858!5m2!1sid!2sid"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card-content">
+                    <h3 class="card-place">Pasar Kue Subuh Senen</h3>
+                    <div class="locate"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#8b0f28">
+                            <path
+                                d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                        </svg><p>Jl. Pasan Senen, Kota Jakarta Pusat</p></div>
+                </div>
+            </div>
+
+            <div class="card-maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31725.70167189552!2d106.80849117431639!3d-6.301429000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed8bd1b06813%3A0xead7a8a172d027a0!2sRomlah%20Oleh-Oleh%20Jakarta!5e0!3m2!1sid!2sid!4v1788428744844!5m2!1sid!2sid"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <div class="card-content">
+                    <h3 class="card-place">Romlah Oleh-oleh Jakarta</h3>
+                    <div class="locate"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#8b0f28">
+                            <path
+                                d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                        </svg><p>Jl. Swadaya, DKI Jakarta</p></div>
+
+                </div>
+            </div>
+
+            <div class="card-maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63448.78063550942!2d107.07593059959389!3d-6.3228393999999835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699b5905488249%3A0x6e8005e93a9e1f04!2sDapoer%20Fizra%20Cikarang!5e0!3m2!1sid!2sid!4v1736179705646!5m2!1sid!2sid"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card-content">
+                    <h3 class="card-place">Dapoer Fizra Cikarang</h3>
+                    <div class="locate"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#8b0f28">
+                            <path
+                                d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                        </svg><p>Jl. Sentosa Gading Barat, Cikarang Selatan</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACT US-->
+    <section id="contact" class="contact">
+        <h2><span>Kontak </span>Kami</h2>
+        <div class="row">
+            <div class="contact-img">
+                <img src="img/bg/background3.jpg" alt="Pastry" />
+            </div>
+            <form action="">
+                <h3>Kami dengan senang hati mendengar anda. Apa anda punya pertanyaan, keluhan maupun saran untuk kami?
+                </h3>
+
+                <div class="input-group">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="Masukkkan Nama" name="nama" id="nama" required/>
+                </div>
+                <div class="input-group">
+                    <i data-feather="mail"></i>
+                    <input type="email" placeholder="Masukkan Email" name="email" id="email" required/>
+                </div>
+                <div class="input-group">
+                    <i data-feather="phone"></i>
+                    <input type="text" placeholder="Masukkan Nomor HP" name="no-hp" id="no-hp" />
+                </div>
+                <div class="input-group input-textarea">
+                    <i data-feather="edit-3"></i>
+                    <textarea placeholder="Masukkan teks keluhan atau saran..." name="teks-keluhan" rows="4"
+                        required></textarea>
+                </div>
+                <div class="input-inline">
+                    <fieldset class="starability-basic">
+                        <legend>Rating Pelayanan</legend>
+                        <input type="radio" id="first-rate1" name="rating" value="1" />
+                        <label for="first-rate1" title="Terrible">Terible</label>
+                        <input type="radio" id="first-rate2" name="rating" value="2" />
+                        <label for="first-rate2" title="Not good">Not Good</label>
+                        <input type="radio" id="first-rate3" name="rating" value="3" />
+                        <label for="first-rate3" title="Average">Average</label>
+                        <input type="radio" id="first-rate4" name="rating" value="4" />
+                        <label for="first-rate4" title="Very good">Perfect</label>
+                        <input type="radio" id="first-rate5" name="rating" value="5" />
+                        <label for="first-rate5" title="Amazing">Amazing</label>
+                    </fieldset>
+                </div>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.instagram.com"><i data-feather="instagram"></i></a>
+            <a href="https://www.facebook.com"><i data-feather="facebook"></i></a>
+        </div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#all-resep">Recipe</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="credit">
+            <p>Created by Kelompok 4 | &COPY; 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

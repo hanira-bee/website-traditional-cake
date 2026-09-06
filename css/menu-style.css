@@ -1,0 +1,877 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA&family=Playwrite+CO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* Reset */
+:root {
+  --primary: #ff4a03;
+  --dark: #010101;
+  --white: #fff;
+  --brown: rgb(70, 38, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #dfc9a8;
+  color: var(--white);
+  /* min-height: 5000px; */
+}
+/* Reset */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: rgb(70, 38, 0);
+  border-bottom: 1px solid #130c01;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--white);
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: var(--white);
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-feather a {
+  color: var(--white);
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-feather a:hover {
+  color: var(--primary);
+}
+
+.navbar .search-form {
+  position: absolute;
+  top: 140%;
+  right: 7%;
+  background-color: rgb(255, 253, 249);
+  width: 40rem;
+  height: 4rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--dark);
+  padding: 1rem;
+  border-radius: 3rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--dark);
+}
+
+#pastry-resep {
+  display: none;
+}
+/* Navbar */
+
+/* Beranda */
+.resep-kue {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/background3.jpg");
+  background-color: #dfc9a8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.resep-kue .content {
+  flex: 1 1 35rem;
+  padding: 1.4rem 7%;
+  margin-left: 3rem;
+  max-width: 60rem;
+}
+
+.resep-kue .content h2 {
+  font-family: "Poppins", verdana;
+  font-size: 2rem;
+  color: var(--brown);
+}
+
+.resep-kue .content h1 {
+  font-family: "Tomorrow", serif;
+  font-size: 2.8rem;
+  color: var(--brown);
+  transition: 0.2s ease-in-out;
+}
+
+.resep-kue .content h1:hover {
+  text-shadow: 0 0 2px rgb(94, 36, 94);
+  transform: translate(1);
+}
+
+.resep-kue .content h3 {
+  font-family: "Playwrite AU SA", caveat;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 1rem 0;
+  max-width: 30rem;
+  color: var(--brown);
+}
+
+.resep-kue .content p {
+  font-family: "Montserrat", serif;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  margin-right: 4rem;
+  color: var(--brown);
+  align-items: center;
+  justify-items: top;
+  max-width: 20rem;
+}
+
+.resep-kue .image {
+  flex: 1 1 45rem;
+  margin-right: 4rem;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.resep-kue .image img {
+  width: 70%;
+  height: 70%;
+  border-radius: 0.5rem;
+  margin-left: 7rem;
+  box-shadow: 0 0 3px #121111;
+}
+/* Beranda */
+
+/* Deskripsi */
+.deskripsi {
+  padding: 8rem 7% 4rem;
+  font-family: "Poppins", verdana;
+  background-color: rgb(63, 20, 20);
+}
+
+.deskripsi h2 {
+  text-align: center;
+  font-family: "Tomorrow", "Poppins", sans-serif;
+  font-size: 4rem;
+  font-style: italic;
+  color: var(--white);
+  transition: 0.2s ease;
+}
+
+.deskripsi h2:hover {
+  transform: scale(1.1);
+}
+
+.deskripsi .row {
+  display: flex;
+  padding: 3rem 5% 1.4rem;
+}
+
+.deskripsi .row p {
+  text-align: center;
+  justify-items: center;
+  color: whitesmoke;
+  font-size: 1.3rem;
+}
+
+/* .lineart .line h3 {
+  text-align: center;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #b55130;
+  border: 1px solid #dfc9a8;
+} */
+/* Deskripsi */
+
+/* .bahan {
+
+}
+
+.bahan .ingredients {
+
+}
+
+.bahan .ingredients h3 {
+
+} */
+
+/* .bahan .ingredients .ingredients-serves {
+    text-align: center;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #b55130;
+    border: 1px solid #dfc9a8;
+} */
+
+/* .bahan .ingredients .ingredients-serves .ingredients-serves-label {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.bahan .ingredients .ingredients .portions {
+    width: 200px;
+    display: inline-block;
+}
+
+.bahan .ingredients .ingredients-table {
+    width: 100%;
+}
+
+.bahan .ingredients .ingredients-table tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+.bahan .ingredients .ingredients-table td.ingredients-action {
+    cursor: pointer;
+    width: 40px;
+    padding: 10px 5px;
+    text-align: center;
+    border-right: 1px solid #ff4a03;
+}
+
+.bahan .ingredients .ingredients-table td {
+    border-bottom: 1px solid #ff4a03;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.bahan .ingredients table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-color: #ff4a03;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+} */
+
+/* Bahan dan langkah */
+.bahan-kue {
+  padding: 2rem 6% 30;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  max-height: fit-content;
+  position: relative;
+  margin: 2rem;
+  height: fit-content;
+  align-items: baseline;
+  max-height: 190rem;
+  /* vertical-align: inherit; */
+}
+
+.bahan-kue .row {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bahan-kue .row .ingredients {
+  width: 30rem;
+  height: fit-content;
+  text-align: left;
+  background-color: whitesmoke;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 3px rgb(21, 26, 24);
+  flex: 1 1 45rem;
+}
+
+.bahan-kue .row .ingredients h1 {
+  font-size: 2rem;
+  padding: 2rem 3rem 1rem;
+  font-family: "Tomorrow", sans-serif;
+  color: #130c01;
+}
+
+.bahan-kue .row .ingredients .ingredients-serves {
+  text-align: center;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  background-color: #b55130;
+  border: 1px solid rgb(163, 142, 142);
+}
+
+.bahan-kue .row .ingredients table {
+  border-collapse: collapse;
+  border-spacing: 2;
+  display: table;
+  text-indent: initial;
+  unicode-bidi: isolate;
+  border-color: #ff4a03;
+  margin-right: 2rem;
+}
+
+.bahan-kue .row .ingredients .ingredients-table {
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.bahan-kue .row .ingredients .ingredients-table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+.bahan-kue .row .ingredients .ingredients-table tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+.bahan-kue .row .ingredients .ingredients-table tbody tr .ingredients-action {
+  cursor: pointer;
+  width: 50px;
+  padding: 10px 5px;
+  text-align: center;
+  border-right: 1px solid #ff4a03;
+}
+
+.bahan-kue .row .ingredients .ingredients-table tbody tr td {
+  border-bottom: 1px solid #ff4a03;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #130c01;
+  display: table-cell;
+  vertical-align: inherit;
+  unicode-bidi: isolate;
+}
+
+.bahan-kue .rows {
+  margin: 1rem 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.bahan-kue .rows h2 {
+  font-size: 2rem;
+  font-family: "Tomorrow", sans-serif;
+  text-align: left;
+  align-items: center;
+  margin: 1rem;
+  color: azure;
+  text-shadow: 0px 1px 1px #5e3f0d;
+  max-height: 150rem;
+  padding: 2rem 2rem 1rem;
+  margin-right: 2rem;
+}
+
+/* .bahan-kue .line {
+  position: absolute;
+  left: 50%;
+  top: 4rem;
+  width: 4px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    #8b4513,
+    #8b4513 10px,
+    #4d4233 10px,
+    #4d4233 20px
+  );
+  z-index: -1;
+} */
+
+.bahan-kue .rows .step {
+  vertical-align: inherit;
+  width: 10em;
+  height: fit-content;
+  text-align: left;
+  background-color: #b55130;
+  border-radius: 1.3rem;
+  box-shadow: 0 0 4px rgb(21, 26, 24);
+  flex: 1 1 45rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 50rem;
+  min-height: 5rem;
+  margin-bottom: 1.9rem;
+}
+
+.bahan-kue .rows .step h1 {
+  padding: 1rem 1rem 0.4rem;
+  font-family: "Tomorrow", sans-serif;
+  font-size: 1.5rem;
+  color: #121111;
+  margin: 0.5rem;
+  display: flex;
+}
+
+.bahan-kue .rows .step p {
+  margin: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  flex-wrap: wrap;
+  text-align: left;
+  align-items: center;
+}
+/* Bahan dan Langkah */
+
+/* Review */
+.review {
+  margin-top: 3rem;
+  padding: 3rem;
+  background-color: rgb(216, 212, 206);
+  align-items: center;
+}
+
+.review .row {
+  display: flex;
+  margin: 0.5rem;
+  border: antiquewhite;
+}
+
+.review .row form h2 {
+  text-align: center;
+  margin: 1rem;
+  color: #130c01;
+}
+
+.review .row form {
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.review .row form .rating {
+  display: inline-block;
+  color: #010101;
+  justify-content: center;
+}
+
+.review .row form .rating input {
+  display: none;
+}
+
+.review .row form .rating label {
+  float: right;
+  cursor: pointer;
+  color: rgb(112, 105, 105, 60%);
+}
+
+.review .row form .rating label:before {
+  content: "\2605";
+  font-size: 40px;
+  margin-left: 0;
+  justify-content: center;
+}
+
+.review .row form .rating input:checked ~ label {
+  color: rgb(39, 39, 36);
+}
+
+.review .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  color: #130c01;
+  background-color: rgb(216, 201, 189);
+  border: 1px solid rgb(107, 102, 102);
+  outline: none;
+  padding-left: 1rem;
+  height: 3rem;
+}
+
+.review .row form .input-group input {
+  background-color: rgb(216, 201, 189);
+  padding-left: 24px;
+  background: none;
+  color: #010101;
+}
+
+.review .row form .review-teks {
+  display: flex;
+  align-items: left;
+  margin-top: 2rem;
+  background-color: rgb(216, 201, 189);
+  border: 1px solid rgb(107, 102, 102);
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  max-width: 60rem;
+  min-width: 6rem;
+}
+
+.review .row form .review-teks textarea {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.3rem;
+  background: none;
+  color: #010101;
+  font-family: "Poppins", serif;
+  align-items: center;
+  max-height: 8rem;
+  min-height: 3rem;
+  min-width: 3rem;
+  max-width: 34rem;
+}
+
+.review .row form .btn {
+  align-items: left;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-family: "Poppins", verdana;
+  border-radius: 1rem;
+  background-color: #bebbb6;
+  color: #111110;
+  box-shadow: 0 0 3px gainsboro;
+}
+
+.review .row .image {
+  flex: 1 1 45rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  margin: 5rem;
+}
+
+.review .row .image img {
+  width: 90%;
+  height: auto;
+  border: 1px 1px 2px #121111;
+  border-radius: 0.5rem;
+  justify-items: center;
+  align-items: center;
+  margin-left: 3rem;
+  margin-top: 5rem;
+  box-shadow: 0 0 4px black;
+  transition: 0.2s ease-in-out;
+}
+
+.review .row .image img:hover {
+  transform: scale(1.1);
+}
+
+/* Review */
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: var(--white);
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--dark);
+}
+
+footer .links {
+  margin-bottom: 1.6rem;
+}
+
+footer .links a {
+  color: var(--white);
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit p {
+  color: var(--dark);
+  font-weight: 700;
+}
+/* Footer */
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .bahan-kue {
+    padding: 4rem 1rem;
+  }
+
+  .resep-kue .image img {
+    flex-wrap: wrap;
+  }
+}
+
+/* Tablet */
+@media (max-width: 988px) {
+  html {
+    font-size: 75%;
+  }
+
+  #pastry-resep {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--white);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.4s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--dark);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .resep-kue {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .resep-kue .content {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .resep-kue .content h2 {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .resep-kue .content p {
+    font-size: 1.3rem;
+    margin-right: 2rem;
+  }
+
+  .resep-kue .image {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 7px 1px;
+  }
+
+  .resep-kue .image img {
+    display: flex;
+    height: 30rem;
+    width: 30rem;
+    object-position: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .bahan-kue {
+    display: flex;
+    padding: 4rem 4% 2rem;
+    height: fit-content;
+  }
+
+  .bahan-kue .row .ingredients {
+    width: 26rem;
+  }
+
+  .bahan-kue .row .ingredients table {
+    width: 70%;
+    font-size: 70%;
+  }
+
+  .bahan-kue .row .ingredients .ingredients-table tbody tr .ingredients-action {
+    width: 20x;
+    size: 100px;
+  }
+
+  .bahan-kue .row .ingredients .ingredients-table tbody tr td {
+    font-size: 17px;
+  }
+
+  .bahan-kue .rows {
+    margin: 1rem 3rem;
+  }
+
+  .bahan-kue .rows .step {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .review .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review .row .image {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 2px;
+  }
+
+  .review .row form .input-group {
+    height: 3rem;
+  }
+
+  .review .row .image img {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  html {
+    font-size: 70%;
+  }
+
+  .bahan-kue {
+    height: fit-content;
+    padding: 4rem 1% 2rem;
+  }
+
+  .bahan-kue .row .ingredients {
+    width: 22rem;
+    height: fit-content;
+  }
+
+  .bahan-kue .row .ingredients .ingredients-table tbody tr td {
+    font-size: 16px;
+  }
+
+  .bahan-kue .rows .step {
+    width: fit-content;
+    height: fit-content;
+    margin: 5px 0;
+  }
+}
+
+/* Media Query */
