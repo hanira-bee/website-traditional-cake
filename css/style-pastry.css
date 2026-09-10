@@ -390,6 +390,7 @@ body {
 .all-resep .row .list-resep img {
   width: 100%;
   height: 15rem;
+  border-bottom-left-radius: 70%;
   object-fit: cover;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -408,7 +409,7 @@ body {
 
 .all-resep .row .list-resep p {
   font-family: "Poppins", verdana;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 400;
   color: #6e6557;
   margin: 1rem 1.5rem;
@@ -417,6 +418,14 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.all-resep .row .list-resep p.recipe-meta {
+  font-size: 0.8rem;
+  color: #8a7e6e;
+  margin-bottom: 1.5rem;
+  border-top: 1px dashed rgba(0, 0, 0, 0.8);
+  padding-top: 0.8rem;
 }
 
 .all-resep .see-more {
@@ -487,7 +496,7 @@ body {
 }
 
 .category .row .category-card img {
-  border-radius: 11px;
+  border-bottom-right-radius: 30%;
   width: 20rem;
   height: 15rem;
   object-fit: cover;
@@ -949,10 +958,18 @@ footer .credit p {
   .contact .row form .input-textarea textarea {
     font-size: 0.9rem;
   }
+
+  footer .links .foot {
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0.9rem 1rem;
+  }
 }
 
 /* Mobile */
-@media (max-width: 450px) {
+@media (max-width: 460px) {
   html {
     font-size: 55%;
   }
@@ -967,7 +984,7 @@ footer .credit p {
     flex-wrap: wrap;
     font-size: 75%;
   }
- 
+
 }
 
 /* Media Query */
