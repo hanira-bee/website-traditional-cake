@@ -183,11 +183,6 @@ body {
   max-width: 450px;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(27, 17, 3, 0.15);
-  transition: transform 0.3s ease;
-}
-
-.beranda-resep .image img:hover {
-  transform: scale(1.03);
 }
 /* Beranda Resep */
 
@@ -317,6 +312,169 @@ body {
   padding-top: 0.8rem;
 }
 /* Resep Kue Basah */
+
+/* kategori kue*/
+.kategorikue {
+  background-color: var(--white);
+  padding: 10rem 7%;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.kategorikue .card-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.kategorikue .card-container h2 {
+  text-align: center;
+  color: darkolivegreen;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.kategorikue .row {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.kategorikue .row .choice {
+  flex: 1 1 50%;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.kategorikue .row .choice a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.kategorikue .row .choice a .image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.kategorikue .row .choice:hover a .image {
+  transform: scale(1.05);
+}
+
+.kategorikue .row .choice a .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.kategorikue .row .choice a:hover .image-overlay {
+  opacity: 1;
+}
+
+.kategorikue .row .choice a .image-overlay .image-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.kategorikue .row .choice a .image-overlay .image-desc {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.kategorikue .row .choice a .image-overlay>* {
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.kategorikue .row .choice a:hover .image-overlay>* {
+  transform: translateY(0);
+}
+  /* .card {
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-between;
+
+    .row {
+      padding: 20px;
+
+      .choice {
+        position: relative;
+        width: 100%;
+        padding: 0;
+
+        a {
+
+          .image {
+            display: block;
+            width: 50rem;
+            height: 30rem;
+            object-fit: cover;
+          }
+
+          .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: var(--white);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+
+            .image-title,
+            .image-desc {
+              font-size: 40px;
+              font-weight: 400;
+            }
+          }
+
+          .image-overlay>* {
+            transform: translateY(20px);
+            transition: transform 0.25s;
+          }
+
+          .image-overlay:hover {
+            opacity: 1;
+          }
+
+          .image-overlay:hover>* {
+            transform: translateY(0);
+          }
+        }
+
+      }
+    }
+  }
+} */
+
+
+/* kategori kue */
 
 /* Footer */
 footer {
