@@ -2,143 +2,168 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
-    <title>Dapoer Lamak</title>
-    <!--Google Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA&family=Playwrite+CO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tomorrow:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <!--Feather icon-->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <!-- <link rel="stylesheet" id="menu" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Dapoer Lamak</title>
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA&family=Playwrite+CO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tomorrow:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <!--Feather icon-->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <!-- <link rel="stylesheet" id="menu" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" id="user" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" /> -->
-    <!--icon web-->
-    <link rel="shortcut icon" href="img/cover1.jpg" type="image/x-icon" />
-    <!--Style CSS-->
-    <link rel="stylesheet" href="css/menu-style.css" />
-  </head>
-  <body>
-    <!--NAVBAR-->
-    <nav class="navbar">
-      <a href="web-pastry.html" class="navbar-logo"
-        >Dapoer <span>Lamak</span>.</a
-      >
-      <div class="navbar-nav">
-        <a href="web-pastry.html">Home</a>
-        <a href="web-pastry.html">About</a>
-        <a href="web-recipe.html">Recipe</a>
-        <a href="web-pastry.html">Contact</a>
+  <!--icon web-->
+  <link rel="shortcut icon" href="../img/misc/watercolor-pink.png" type="image/x-icon" />
+  <!--Style CSS-->
+  <link rel="stylesheet" href="../css/menu-style.css" />
+</head>
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar">
+    <a href="../index.html" class="navbar-logo">Dapoer <span>Lamak</span>.</a>
+    <div class="navbar-nav">
+      <a href="../index.html">Beranda</a>
+      <a href="../about.html">Tentang Kami</a>
+      <a href="../recipe.html">Resep</a>
+      <a href="../contact.html">Kontak</a>
+    </div>
+
+    <div class="navbar-feather">
+      <a href="#" id="search-btn"><i data-feather="search"></i></a>
+      <!-- <a href="#" id="user"><i data-feather="user"></i></a> -->
+      <a href="#" id="pastry-resep"><i data-feather="menu"></i></a>
+    </div>
+
+    <!-- Search -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here..." />
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+    <!-- Search -->
+  </nav>
+
+  <!-- Beranda -->
+  <section class="resep-kue" id="resep-kue">
+    <main class="content">
+      <h2>Resep</h2>
+      <h1>Kue Semprit</h1>
+      <h3>Kue berbentuk bunga cantik, renyah dan manis!</h3>
+
+      <div class="meta-info">
+        <span class="meta-item">
+          <i data-feather="grid"></i><strong>7</strong> bahan
+        </span>
+        <span class="meta-item">
+          <i data-feather="list"></i><strong>8</strong> langkah
+        </span>
       </div>
 
-      <div class="navbar-feather">
-        <a href="#" id="search-btn"><i data-feather="search"></i></a>
-        <!-- <a href="#" id="user"><i data-feather="user"></i></a> -->
-        <a href="#" id="pastry-resep"><i data-feather="menu"></i></a>
-      </div>
+    </main>
+    <div class="image">
+      <img src="../img/recipes/semprit keju.jpg" alt="semprit" class="semprit" />
+    </div>
+  </section>
 
-      <!-- Search -->
-      <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here..." />
-        <label for="search-box"><i data-feather="search"></i></label>
-      </div>
-      <!-- Search -->
-    </nav>
+  <!-- Deskripsi -->
+  <section class="deskripsi" id="deskripsi">
+    <h2>Tahukah Kamu?</h2>
+    <div class="row">
+      <p>
+        Kue semprit adalah kue kering yang berasal dari Jerman dan memiliki
+        nama Spritzgeback atau Spritz Cookies. Kue ini memiliki ciri khas
+        bentuknya yang bulat dan berlekuk seperti bunga, serta rasanya yang
+        renyah dan manis.
+      </p>
+    </div>
+  </section>
 
-    <!-- Beranda -->
-    <section class="resep-kue" id="resep-kue">
-      <main class="content">
-        <h2>Resep</h2>
-        <h1>Kue Semprit</h1>
-        <h3>Kue berbentuk bunga cantik, renyah dan manis!</h3>
-        <p>
-          <i data-feather="grid"></i><strong>7 </strong>bahan
-          <i data-feather="list"></i><strong>8 </strong>langkah
-        </p>
-      </main>
-      <div class="image">
-        <img src="img/semprit.jpg" alt="semprit" class="semprit" />
+  <!-- Bahan dan Langkah -->
+  <section class="bahan-kue" id="bahan-kue">
+    <div class="row">
+      <div class="ingredients">
+        <h1>Bahan</h1>
+        <div class="ingredients-serves">Hasil: 1 wadah kaca</div>
+        <table class="ingredients-table">
+          <tbody>
+            <tr>
+              <td class="ingredients-action">
+                <label for="" class="check-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+              <td class="ingredients-text">125 gr butter mix margarin</td>
+            </tr>
+            <tr>
+              <td class="ingredients-action">
+                <label for="" class="check-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+              <td class="ingredients-text">75 gr gula</td>
+            </tr>
+            <tr>
+              <td class="ingredients-action">
+                <label for="" class="check-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+              <td class="ingredients-text">170 gr tepung terigu</td>
+            </tr>
+            <tr>
+              <td class="ingredients-action">
+                <label for="" class="check-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+              <td class="ingredients-text">1 kuning telur</td>
+            </tr>
+            <tr>
+              <td class="ingredients-action">
+                <label for="" class="check-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+              <td class="ingredients-text">10 gr maizena</td>
+            </tr>
+            <tr>
+              <td class="ingredients-action">
+                <label for="" class="check-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+              <td class="ingredients-text">10 gr susu bubuk</td>
+            </tr>
+            <tr>
+              <td class="ingredients-action">
+                <label for="" class="check-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+              <td class="ingredients-text">1/2 sdt vanilla</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </section>
+    </div>
 
-    <!-- Deskripsi -->
-    <section class="deskripsi" id="deskripsi">
-      <h2>Tahukah Kamu?</h2>
-      <div class="row">
-        <p>
-          Kue semprit adalah kue kering yang berasal dari Jerman dan memiliki
-          nama Spritzgeback atau Spritz Cookies. Kue ini memiliki ciri khas
-          bentuknya yang bulat dan berlekuk seperti bunga, serta rasanya yang
-          renyah dan manis.
-        </p>
-      </div>
-    </section>
-
-    <!-- Bahan dan Langkah -->
-    <section class="bahan-kue" id="bahan-kue">
-      <div class="row">
-        <div class="ingredients">
-          <h1>Bahan</h1>
-          <div class="ingredients-serves">Hasil: 1 wadah kaca</div>
-          <table class="ingredients-table">
-            <tbody>
-              <tr>
-                <td class="ingredients-action">
-                  <i data-feather="circle"></i>
-                </td>
-                <td>125 gr butter mix margarin</td>
-              </tr>
-              <tr>
-                <td class="ingredients-action">
-                  <i data-feather="circle"></i>
-                </td>
-                <td>75 gr gula</td>
-              </tr>
-              <tr>
-                <td class="ingredients-action">
-                  <i data-feather="circle"></i>
-                </td>
-                <td>170 gr tepung terigu</td>
-              </tr>
-              <tr>
-                <td class="ingredients-action">
-                  <i data-feather="circle"></i>
-                </td>
-                <td>1 kuning telur</td>
-              </tr>
-              <tr>
-                <td class="ingredients-action">
-                  <i data-feather="circle"></i>
-                </td>
-                <td>10 gr maizena</td>
-              </tr>
-              <tr>
-                <td class="ingredients-action">
-                  <i data-feather="circle"></i>
-                </td>
-                <td>10 gr susu bubuk</td>
-              </tr>
-              <tr>
-                <td class="ingredients-action">
-                  <i data-feather="circle"></i>
-                </td>
-                <td>1/2 sdt vanilla</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="rows">
-        <h2>Langkah</h2>
+    <div class="rows">
+      <h2>Langkah</h2>
+      <div class="steps">
         <div class="step">
           <h1>1</h1>
           <p>
@@ -184,14 +209,16 @@
           <p>Angkat dan siap disajikan untuk sajian lebaran.</p>
         </div>
       </div>
-    </section>
-    <!-- Bahan dan Langkah -->
+    </div>
+  </section>
+  <!-- Bahan dan Langkah -->
 
-    <!-- Review -->
-    <section class="review" id="review">
-      <div class="row">
-        <form action="">
-          <h2>Tulis Review</h2>
+  <!-- Review -->
+  <section class="review" id="review">
+    <div class="row">
+      <form action="" method="POST">
+        <h2>Tulis Review</h2>
+        <div class="rating-container">
           <div class="rating">
             <input type="radio" name="rating" id="star5" value="5" />
             <label for="star5"></label>
@@ -204,77 +231,61 @@
             <input type="radio" name="rating" id="star1" value="1" />
             <label for="star1"></label>
           </div>
-          <div class="score">No rating.</div>
-
-          <div class="input-group">
-            <i data-feather="user"></i>
-            <input
-              type="text"
-              placeholder="Masukkan nama"
-              name="nama"
-              id="nama"
-            />
-          </div>
-          <div class="input-group">
-            <i data-feather="mail"></i>
-            <input
-              type="text"
-              placeholder="Masukkan email"
-              name="mail"
-              id="mail"
-            />
-          </div>
-          <div class="input-group">
-            <i data-feather="phone"></i>
-            <input
-              type="text"
-              placeholder="Masukkan nomor hp"
-              name="no-hp"
-              id="no-hp"
-            />
-          </div>
-
-          <div class="review-teks">
-            <i data-feather="edit-3"></i>
-            <textarea
-              placeholder="Masukkan ulasan"
-              name="teks-ulasan"
-              rows="2"
-              cols="40"
-              required="required"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn">Kirim</button>
-          <button type="reset" class="btn">Hapus</button>
-        </form>
-        <div class="image">
-          <img src="img/semprit.jpg" alt="semprit" />
+          <div class="score">Berikan Penilaian Anda</div>
         </div>
-      </div>
-    </section>
 
-    <!-- Review -->
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="Masukkan nama" name="nama" id="nama" />
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="text" placeholder="Masukkan email" name="mail" id="mail" />
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" placeholder="Masukkan nomor hp" name="no-hp" id="no-hp" />
+        </div>
 
-    <footer>
-      <div class="socials">
-        <a href="https://www.instagram.com"><i data-feather="instagram"></i></a>
-        <a href="https://www.facebook.com"><i data-feather="facebook"></i></a>
-      </div>
-      <div class="links">
-        <a href="web-pastry.html">Home</a>
-        <a href="web-pastry.html">About</a>
-        <a href="web-recipe.html">Recipe</a>
-        <a href="web-pastry.html">Contact</a>
-      </div>
-      <div class="credit">
-        <p>Created by Kelompok 4 | &COPY; 2025</p>
-      </div>
-    </footer>
+        <div class="input-group input-textarea">
+          <i data-feather="edit-3"></i>
+          <textarea placeholder="Masukkan ulasan" name="teks-ulasan" rows="4" required></textarea>
+        </div>
 
-    <script src="js/script.js"></script>
+        <div class="btn-group">
+          <button type="submit" class="btn btn-submit">Kirim</button>
+          <button type="reset" class="btn btn-reset">Hapus</button>
+        </div>
+      </form>
 
-    <script>
-      feather.replace();
-    </script>
-  </body>
+      <div class="image">
+        <img src="../img/recipes/semprit keju.jpg" alt="semprit" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Review -->
+  <footer>
+    <div class="socials">
+      <a class="icon" href="https://www.instagram.com" title="Instagram"><i data-feather="instagram"></i></a>
+      <a class="icon" href="https://www.facebook.com" title="Facebook"><i data-feather="facebook"></i></a>
+    </div>
+    <div class="links">
+      <a class="foot" href="../index.html">Beranda</a>
+      <a class="foot" href="../about.html">Tentang Kami</a>
+      <a class="foot" href="../recipe.html">Resep</a>
+      <a class="foot" href="../contact.html">Kontak</a>
+    </div>
+    <div class="credit">
+      <p>Created by Team 4 | &COPY; 2025</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  <script>
+    feather.replace();
+  </script>
+</body>
+
 </html>
