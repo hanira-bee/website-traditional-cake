@@ -22,12 +22,12 @@
 <body>
     <!--NAVBAR-->
     <nav class="navbar">
-        <a href="#home" class="navbar-logo">Dapoer <span>Lamak</span>.</a>
+        <a href="index.html" class="navbar-logo">Dapoer <span>Lamak</span>.</a>
         <div class="navbar-nav">
-            <a href="index.html">Home</a>
-            <a href="about html">About</a>
-            <a href="#all-resep">Recipe</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html">Beranda</a>
+            <a href="about.html">Tentang Kami</a>
+            <a href="recipe.html">Resep</a>
+            <a href="contact.html">Kontak</a>
         </div>
 
         <div class="navbar-feather">
@@ -46,20 +46,113 @@
 
     <!--ABOUT US-->
     <section class="about" id="about">
-        <h2><span>About </span>Us</h2>
-        <div class="row">
-            <div class="about-img">
-                <img src="img/bg/background6.jpg" alt="Tentang Kami"/>
+        <div class="content">
+            <div class="upper">
+                <h2><span>Tentang </span>Kami</h2>
+                <div class="btn-resep">
+                    <button>
+                        <a href="recipe.html">Lihat Resep ⇀</a>
+                    </button>
+                </div>
             </div>
-            <div class="content">
-                <h3><i>Dapoer <span>Lamak</span></i></h3>
-                <p>Website <span>resep kuliner kue modern hingga tradisional</span> yang dikhususkan pada kue kering dan kue basah.</p>
-                <p>Kami menyediakan berbagai resep dari bagaimana <span>cara pembuatan hingga langkah demi langkah</span><br>
-                    Temukan banyak resep kuliner kue yang dapat kamu ikuti dirumah!
-                    Untuk Hari Raya sampai jajanan sehari-hari, rasakan manis dan gurih di setiap suapan!</p>
+
+            <div class="row">
+                <div class="about-img">
+                    <!-- foto utama -->
+                    <div class="img-main">
+                        <img src="img/bg/background6.jpg" alt="Tentang Kami" />
+                    </div>
+                    <!-- gambar mini 1-->
+                    <div class="img-sc1">
+                        <img src="img/recipes/klepon1.jpg" alt="kue-klepon">
+                    </div>
+                    <div class="img-sc2">
+                        <img src="img/recipes/kue-putri-salju.jpg" alt="kue-putrisalju">
+                    </div>
+                </div>
+                <div class="content-about">
+                    <h3><i>Dapoer Lamak</i></h3>
+                    <p class="desc-about">Sebuah website Resep Kue Tradisional yang dibuat oleh <span>Kelompok 4</span>
+                        sebagai tugas akhir Mata Kuliah Web Programming I. Berawal dari mencari jajanan, sambil
+                        mengobrol di halaman kampus. Kami berpikir, <span>bagaimana jika kami membuat sebuah website
+                            resep untuk kita, kami, belajar membuat kue tradisional sendiri?</span><br><br> Mari temukan
+                        resep kuliner kue yang dapat kamu ikuti dirumah! Untuk Hari Raya sampai jajanan sehari-hari,
+                        rasakan manis dan gurih di setiap suapan!</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <h3 class="desc-feature">
+                    Fitur apa saja sih yang dapat kalian temukan?
+                </h3>
+                <div class="list-feature">
+                    <!-- fitur 1 -->
+                    <div class="count">
+                        <div class="number">
+                            <h4>01</h4>
+                        </div>
+                        <p class="desc-list">
+                            Sebuah Website Responsif dan User-Friendly
+                        </p>
+                    </div>
+
+                    <!-- fitur 2 -->
+                    <div class="count">
+                        <div class="number">
+                            <h4>02</h4>
+                        </div>
+                        <p class="desc-list">
+                            Resep kue tradisional yang sudah kami pilihkan untuk anda dalam satu website
+                        </p>
+                    </div>
+
+                    <!-- fitur 3 -->
+                    <div class="count">
+                        <div class="number">
+                            <h4>03</h4>
+                        </div>
+                        <p class="desc-list">
+                            Bahan dan langkah yang mudah diikuti siapa saja, pemula ataupun yang sudah ahli
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="last">
+                <p class="desc-last">
+                    Lihat daftar-daftar resep yang sudah kami pilihkan hanya untuk anda disini!
+                </p>
+                <div class="btn-last">
+                    <a href="recipe.html">
+                        <p>Menuju Halaman Resep</p>
+                    </a>
+                </div>
             </div>
         </div>
+
     </section>
+
+    <footer>
+        <div class="socials">
+            <a class="icon" href="https://www.instagram.com" title="Instagram"><i data-feather="instagram"></i></a>
+            <a class="icon" href="https://www.facebook.com" title="Facebook"><i data-feather="facebook"></i></a>
+        </div>
+        <div class="links">
+            <a class="foot" href="index.html">Beranda</a>
+            <a class="foot" href="about.html">Tentang Kami</a>
+            <a class="foot" href="#recipe-cake">Resep</a>
+            <a class="foot" href="contact.html">Kontak</a>
+        </div>
+        <div class="credit">
+            <p>Created by Team 4 | &COPY; 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        feather.replace();
+    </script>
 </body>
 
 
