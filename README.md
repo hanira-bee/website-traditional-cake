@@ -26,7 +26,11 @@ update: September 13, 2026
 - Language --> Indonesia (possibly will add english)
 
 ## ▶ Demo Video
-not yet available
+- tap the image to open the page ↓
+- [Demo Video](https://youtu.be/mlN6tELHxD4)
+
+## 🔗 Live Demo
+- [Live Demo](https://hanira-bee.github.io/website-traditional-cake/)
 
 ## 🐝 Author 
 - **hani** https://github.com/hanira-bee
