@@ -1,5 +1,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/hanira-bee/website-traditional-cake.svg?style=social)](https://github.com/hanira-bee/website-traditional-cake/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/hanira-bee/website-traditional-cake.svg)](https://github.com/hanira-bee/website-traditional-cake/network)
+[![Last_Commit](https://img.shields.io/github/last-commit/hanira-bee/website-traditional-cake.svg)](https://github.com/hanira-bee/website-traditional-cake/commits/main)
 
 # 🍰 Traditional Cake Website 
 
@@ -26,7 +27,6 @@ update: September 13, 2026
 - Language --> Indonesia (possibly will add english)
 
 ## ▶ Demo Video
-- tap the image to open the page ↓
 - [Demo Video](https://youtu.be/mlN6tELHxD4)
 
 ## 🔗 Live Demo
