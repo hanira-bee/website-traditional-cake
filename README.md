@@ -1,6 +1,5 @@
 [![GitHub stars](https://img.shields.io/github/stars/hanira-bee/website-traditional-cake.svg?style=social)](https://github.com/hanira-bee/website-traditional-cake/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/hanira-bee/website-traditional-cake.svg)](https://github.com/hanira-bee/website-traditional-cake/network)
-[![license](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
 
 # 🍰 Traditional Cake Website 
 
