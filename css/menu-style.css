@@ -151,7 +151,45 @@ body {
   gap: 4rem;
 }
 
+.resep-kue .main-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+  max-width: 35rem;
+}
+
+.resep-kue .breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #b55130;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: #b55130;
+  font-weight: bold;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  padding-right: 0.5rem;
+  color: #2e2110;
+}
+
 .resep-kue .content {
+
   flex: 1 1 50%;
   max-width: 35rem;
 }
