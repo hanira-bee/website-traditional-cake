@@ -750,6 +750,7 @@ body {
   .content .row .about-img {
     position: relative;
     padding: 0 2rem;
+    margin-bottom: 3rem;
   }
 
   .content .row .about-img .img-main {
@@ -768,19 +769,19 @@ body {
   }
 
   .content .row .about-img .img-main img:hover {
-    transform: scale(1.5);
+    transform: scale(1.15);
   }
 
   .content .row .about-img .img-sc1 {
     position: absolute;
-    bottom: 86px;
-    left: -3px;
-    width: 1/2;
-    border-radius: 20px;
+    bottom: 15%;
+    left: -10px;
+    width: 35%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
-    border: 4px;
-    border-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid white;
     max-width: 15rem;
   }
 
@@ -792,14 +793,14 @@ body {
 
   .content .row .about-img .img-sc2 {
     position: absolute;
-    right: 4px;
-    bottom: -24px;
-    width: 1/2;
-    border-radius: 20px;
+    right: -10px;
+    bottom: -20px;
+    width: 40%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    border: 4px;
-    border-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
     max-width: 20rem
   }
 
@@ -1318,6 +1319,51 @@ footer .credit p {
     font-size: 75%;
   }
 
+  .about .content .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem; 
+    justify-items: center;
+  }
+
+  .about .content .row .about-img .img-sc1,
+  .about .content .row .about-img .img-sc2{
+    display: none;
+  }
+
+  .about .content .row .about-img {
+    padding: 0;
+    margin-bottom: 1.5rem;
+    max-width: 25rem;
+  }
+
+  .about .content .row .about-img .img-main {
+    max-width: 100%;
+    aspect-ratio: 16/9; 
+  }
 }
 
+@media (max-width: 320px) {
+  html {
+    font-size: 50%;
+  }
+
+  .maps .row {
+    display: flex;
+  }
+
+  .maps .row .card-maps{
+    height: 150px;
+    justify-content: center;
+  }
+
+  .maps .row .card-maps iframe {
+    height: 80px;
+  }
+
+  footer .links a {
+    margin: 5px;
+  }
+
+}
 /* Media Query */
