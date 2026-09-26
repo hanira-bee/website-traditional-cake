@@ -319,7 +319,7 @@ body {
 }
 
 .bahan-kue .row {
-  margin: 0 8rem;
+  margin: 0 2rem;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -327,7 +327,7 @@ body {
 }
 
 .bahan-kue .row .ingredients {
-  width: 100%;
+  width: 400px;
   height: fit-content;
   text-align: left;
   background-color: whitesmoke;
@@ -404,7 +404,7 @@ body {
 
 /* langkah */
 .bahan-kue .rows {
-  margin: 0 8rem;
+  margin: 0 2rem;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -792,11 +792,13 @@ footer .credit p {
   }
 
   .bahan-kue {
-    flex-direction: column;
-    gap: 3rem;
     display: flex;
-    padding: 2rem 5%;
-    margin: 1rem auto;
+    flex-direction: column;
+    padding: 2rem 4%;
+    gap: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: flex-start;
   }
 
   .bahan-kue .row,
@@ -804,8 +806,13 @@ footer .credit p {
     flex: 1 1 100%;
   }
 
+  .bahan-kue .row {
+    margin: 1rem 3rem;
+  }
+
   .bahan-kue .row .ingredients {
-    width: 26rem;
+    width: 100%;
+    justify-content: center;
   }
 
   .bahan-kue .row .ingredients table {
@@ -905,7 +912,7 @@ footer .credit p {
   .bahan-kue {
     display: flex;
     flex-direction: column;
-    padding: 2rem 4%;
+    padding: 2rem 5%;
     gap: 3rem;
     width: 100%;
     box-sizing: border-box;
