@@ -182,7 +182,7 @@ body {
   font-weight: bold;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
   content: ">";
   padding-right: 0.5rem;
   color: #2e2110;
@@ -303,212 +303,9 @@ body {
   font-size: 1.3rem;
 }
 
-/* .bahan-kue {
-  padding: 2rem 6% 4rem;
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  gap: 3rem;
-  height: fit-content;
-  align-items: flex-start;
-  margin: 2rem auto;
-  max-width: 1200px;
-}
-
-.bahan-kue .row {
-  display: flex;
-  flex: 1 1 45%;
-  width: 100%;
-}
-
-.bahan-kue .row .ingredients {
-  width: 100%;
-  height: fit-content;
-  text-align: left;
-  background-color: whitesmoke;
-  border-radius: 1.2rem;
-  box-shadow: 0 4px 15px rgba(21, 26, 24, 0.15);
-  padding: 1rem 2rem 2rem 2rem;
-}
-
-.bahan-kue .row .ingredients h1 {
-  font-size: 2rem;
-  padding: 2rem 0 1rem 0;
-  font-family: "Tomorrow", sans-serif;
-  color: #2e2110;
-}
-
-.bahan-kue .row .ingredients .ingredients-serves {
-  text-align: center;
-  padding: 8px;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  background-color: #b55130;
-  color: #ffffff;
-  font-weight: 600;
-  border: 1px solid rgb(163, 142, 142);
-}
-
-.bahan-kue .row .ingredients .ingredients-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 2rem;
-}
-
-.bahan-kue .row .ingredients .ingredients-table tr {
-  border-bottom: 1px solid #ff4e03;
-}
-
-.bahan-kue .row .ingredients .ingredients-table tr .ingredients-action {
-  width: 45px;
-  padding: 10px 0;
-  text-align: left;
-  vertical-align: middle;
-}
-
-.bahan-kue .row .ingredients .ingredients-table tr .ingredients-text {
-  padding: 10px 5px;
-  font-size: 20px;
-  font-family: sans-serif;
-  font-weight: 400;
-  color: #130c01;
-  vertical-align: middle;
-  transition: opacity 0.3s ease, text-decoration 0.3s ease;
-}
-
-.check-container {
-  display: block;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.check-container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: transparent;
-  border: 2px solid #ff4a03;
-  border-radius: 50%;
-  transition: background-color 0.2s ease;
-}
-
-.check-container input:checked ~ .checkmark {
-  background-color: #ff4a03;
-}
-
-.checkmark::after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.check-container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.check-container .checkmark:after {
-  left: 6px;
-  top: 2px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
-
-.bahan-kue .row .ingredients .ingredients-table tr:has(input:checked) .ingredients-text {
-  text-decoration: line-through;
-  opacity: 0.5;
-}
-
-.bahan-kue .rows {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  flex-direction: 1 1 50%;
-  width: 100%;
-}
-
-.bahan-kue .rows h2 {
-  font-size: 2rem;
-  font-family: "Tomorrow", sans-serif;
-  text-align: left;
-  margin: 0 0 1rem 0;
-  color: #130c01;
-  text-shadow: 0px 1px 1px;
-}
-
-.bahan-kue .rows .step {
-  width: 100%;
-  height: fit-content;
-  text-align: left;
-  background-color: #b55130;
-  border-radius: 1.3rem;
-  box-shadow: 0 4px 12px rgba(21, 26, 24, 0.2);
-  display: flex;
-  align-items: flex-start;
-}
-
-.bahan-kue .rows .step h1 {
-  padding: 0;
-  font-family: "Tomorrow", sans-serif;
-  font-size: 1.8rem;
-  color: #ffffff;
-  margin: 0 1.5rem 0 0;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-.bahan-kue .rows .step p {
-  margin: 0;
-  font-size: 1.2rem;
-  font-family: "Poppins", sans-serif;
-  color: #ffffff;
-  line-height: 1.6;
-}
-.bahan-kue .row .ingredients .ingredients-table tbody {
-  display: table-row-group;
-  vertical-align: middle;
-  unicode-bidi: isolate;
-  border-color: inherit;
-}
-
-.bahan-kue .row .ingredients .ingredients-table tbody tr .ingredients-action {
-  cursor: pointer;
-  width: 50px;
-  padding: 10px 5px;
-  text-align: center;
-  border-right: 1px solid #ff4a03;
-}
-
-.bahan-kue .row .ingredients .ingredients-table tbody tr td {
-  border-bottom: 1px solid #ff4a03;
-  font-size: 20px;
-  font-family: sans-serif;
-  font-weight: 400;
-  color: #130c01;
-  display: table-cell;
-  vertical-align: inherit;
-  unicode-bidi: isolate;
-} */
-
 /* Bahan dan langkah */
 .bahan-kue {
-  padding: 2rem 6% 30;
+  padding: 2rem 4%;
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: space-around;
@@ -522,10 +319,11 @@ body {
 }
 
 .bahan-kue .row {
+  margin: 0 8rem;
   display: flex;
-  flex: 1 1 45%;
-  width: 100%;
-  min-width: 30rem;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: baseline;
 }
 
 .bahan-kue .row .ingredients {
@@ -569,7 +367,7 @@ body {
   padding: 10px;
   text-align: left;
   vertical-align: middle;
-  border-right: 1px solid #ff4a03; 
+  border-right: 1px solid #ff4a03;
   border-bottom: 1px solid #ff4a03;
 }
 
@@ -651,6 +449,7 @@ body {
   color: whitesmoke;
   line-height: 1.6;
 }
+
 /* Bahan dan Langkah */
 
 /* Review */
@@ -687,7 +486,7 @@ body {
 
 .review .rating-container {
   text-align: center;
-  margin-bottom: 2rem;  
+  margin-bottom: 2rem;
   color: rgb(70, 14, 14);
 
 }
@@ -704,7 +503,7 @@ body {
 
 .review .row form .rating label {
   cursor: pointer;
-  color: rgba(112, 105, 105, 0,4);
+  color: rgba(112, 105, 105, 0, 4);
   font-size: 35px;
   transition: color 0.2s ease;
   padding: 0 4px;
@@ -718,10 +517,10 @@ body {
   justify-content: center;
 }
 
-.review .row form .rating input:checked ~ label,
+.review .row form .rating input:checked~label,
 .review .row form .rating label:hover,
-.review .row form .rating label:hover ~ label {
-  color: #ffb703; 
+.review .row form .rating label:hover~label {
+  color: #ffb703;
 }
 
 .review .row form .input-group {
@@ -746,7 +545,7 @@ body {
 .review .row form .review-teks {
   display: flex;
   align-items: left;
-  margin-bottom: center;  
+  margin-bottom: center;
   background-color: rgb(216, 201, 189);
   border: 1px solid rgb(148, 140, 133);
   padding: 0 1.2rem;
@@ -774,7 +573,7 @@ body {
 }
 
 .review .row form .input-textarea {
-  height: auto; 
+  height: auto;
   align-items: flex-start;
   padding-top: 1rem;
 }
@@ -836,17 +635,18 @@ body {
 
 .review .row .image img {
   width: 100%;
-  max-width: 400px; 
-  height: auto; 
+  max-width: 400px;
+  height: auto;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .review .row .image img:hover {
-  transform: scale(1.03); 
+  transform: scale(1.03);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
+
 /* Review */
 
 /* Footer */
@@ -893,6 +693,7 @@ footer .credit p {
   color: var(--dark);
   font-weight: 700;
 }
+
 /* Footer */
 
 /* Media Query */
@@ -998,7 +799,7 @@ footer .credit p {
     margin: 1rem auto;
   }
 
-  .bahan-kue .row, 
+  .bahan-kue .row,
   .bahan-kue .rows {
     flex: 1 1 100%;
   }
@@ -1013,12 +814,12 @@ footer .credit p {
   }
 
   .bahan-kue .row .ingredients .ingredients-table tbody tr .ingredients-action {
-    width: 20x;
-    size: 100px;
+    width: 20px;
+    size: 10px;
   }
 
   .bahan-kue .row .ingredients .ingredients-table tbody tr td {
-    font-size: 17px;
+    font-size: 12px;
   }
 
   .bahan-kue .rows {
@@ -1065,7 +866,7 @@ footer .credit p {
   }
 
   .resep-kue {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
     padding: 7rem 5% 3rem;
     gap: 2.5rem;
@@ -1084,24 +885,87 @@ footer .credit p {
   }
 
   .resep-kue .image img {
-    max-width: 320px;
+    max-width: 200px;
+    max-height: 100px;
     object-fit: cover;
   }
 
+  .deskripsi {
+    padding: 3rem 5% 2rem;
+  }
+
+  .deskripsi h2 {
+    font-size: 2rem;
+  }
+
+  .deskripsi .row p {
+    font-size: 1rem;
+  }
+
   .bahan-kue {
-    height: fit-content;
-    padding: 4rem 1% 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4%;
+    gap: 3rem;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: flex-start;
+  }
+
+  .bahan-kue .row {
+    flex: 1 1 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
   }
 
   .bahan-kue .row .ingredients {
-    width: 80%;
-    height: fit-content;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem;
   }
 
-  .bahan-kue .rows .step {
-    width: fit-content;
-    height: fit-content;
-    margin: 5px 0;
+  .bahan-kue .row .ingredients h1 {
+    font-size: 2.2rem;
+  }
+
+  .bahan-kue .row .ingredients .ingredients-serves {
+    font-size: 10px;
+  }
+
+  .bahan-kue .row .ingredients .ingredients-table td.ingredients-text {
+    font-size: 1.4rem;
+  }
+
+  .bahan-kue .rows {
+    flex: 1 1 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+  }
+
+  .bahan-kue .rows h2 {
+    font-size: 2, 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .bahan-kue .rows .steps .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+
+  .bahan-kue .rows .steps .step h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .bahan-kue .rows .steps .step p {
+    font-size: 1.4rem;
+    line-height: 1.6;
   }
 
   .review {
@@ -1116,13 +980,25 @@ footer .credit p {
   .review .row .image {
     display: none;
   }
-  
+
   .review .row form {
     flex: 1 1 100%;
+  }
+
+  footer .links .foot {
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0.9rem 1rem;
   }
 }
 
 @media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
   .resep-kue .content h1 {
     font-size: 2.2rem;
   }
@@ -1138,10 +1014,6 @@ footer .credit p {
 
   .bahan-kue .row .ingredients {
     padding: 1rem;
-  }
-
-  .bahan-kue .row .ingredients .ingredients-table tr .ingredients-text {
-    font-size: 16px;
   }
 
   .bahan-kue .row .step p {
